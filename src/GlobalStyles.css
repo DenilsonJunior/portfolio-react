@@ -1,3 +1,5 @@
+@import url('./assets/fonts/montserrat/stylesheet.css');
+
 :root {
     --white: white;
     --black: black;
@@ -17,6 +19,7 @@
 }
 
 body {
+    font-family: 'Montserrat';
     background-color: var(--bg-color);
     color: var(--text-color);
 }

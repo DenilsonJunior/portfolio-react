@@ -1,4 +1,4 @@
-import './GlobalStyles.css'
+import './GlobalStyles.css';
 import Header from './componentes/header/Header.jsx';
 import QuemSouEu from './componentes/quemSou/QuemSouEu.jsx';
 

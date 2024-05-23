@@ -8,6 +8,8 @@ const Header = () => {
 
     return (
         <HeaderContainer>
+            <ModoEscuroButton modoEscuro={modoEscuro} setModoEscuro={setModoEscuro} />
+            
             <button 
                 onClick={() => setIsTrue(!isTrue)}
                 aria-expanded={!isTrue}
@@ -24,8 +26,6 @@ const Header = () => {
                     <a href="#a">Contatos</a>
                 </div>
             )}
-
-            <ModoEscuroButton modoEscuro={modoEscuro} setModoEscuro={setModoEscuro} />
         </HeaderContainer>
     );
 };

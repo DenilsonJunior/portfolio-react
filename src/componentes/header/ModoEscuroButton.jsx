@@ -8,7 +8,7 @@ const ModoEscuroButton = ({ modoEscuro, setModoEscuro }) => {
 
     return (
         <button onClick={() => setModoEscuro(!modoEscuro)}>
-            {modoEscuro ? '☻' : '☺'}
+            {modoEscuro ? '🌚' : '🌝'}
         </button>
     );
 };
