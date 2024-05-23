@@ -1,23 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HeaderContainer } from './styles.js';
 
 const Header = () => {
     const [isTrue, setIsTrue] = useState(true);
     const [modoEscuro, setModoEscuro] = useState(false);
 
-    const toggleModoEscuro = () => {
-        setModoEscuro(!modoEscuro);
-        if (modoEscuro) {
-            document.documentElement.style.setProperty('--claro', 'white');
-            document.documentElement.style.setProperty('--escuro', '#1C1F2D');
-        } else {
-            document.documentElement.style.setProperty('--claro', '#1C1F2D');
-            document.documentElement.style.setProperty('--escuro', 'white');
-        }
-    };
+    useEffect(() => {
+        document.documentElement.style.setProperty('--bg-color', modoEscuro ? 'var(--escuro)' : 'var(--claro)');
+        document.documentElement.style.setProperty('--text-color', modoEscuro ? 'var(--claro)' : 'var(--black)');
+    }, [modoEscuro]);
 
     return (
-        <HeaderContainer isTrue={isTrue} modoEscuro={modoEscuro}>
+        <HeaderContainer isTrue={isTrue}>
             <button 
                 onClick={() => setIsTrue(!isTrue)}
                 aria-expanded={!isTrue}
@@ -26,9 +20,7 @@ const Header = () => {
                 {isTrue ? '☰' : '✖'}
             </button>
 
-            <button
-                onClick={toggleModoEscuro}
-            >
+            <button onClick={() => setModoEscuro(!modoEscuro)}>
                 {modoEscuro ? '☻' : '☺'}
             </button>
             

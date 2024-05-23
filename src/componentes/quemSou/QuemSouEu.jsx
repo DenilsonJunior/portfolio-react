@@ -1,9 +1,11 @@
+import React from 'react';
 import { Quem } from './styles.js';
+import minhaImagem from '../../assets/img/eu.png'; // Certifique-se de usar o caminho correto a partir do local onde está o componente
 
 const QuemSouEu = () => {
     return (
         <Quem>
-            <img src="" alt="Sua imagem" />
+            <img src={minhaImagem} alt="Sua imagem" />
             <div>
                 <h1>Quem sou eu?</h1>
                 <p>

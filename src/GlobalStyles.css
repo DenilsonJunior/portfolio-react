@@ -4,7 +4,10 @@
     --color-01: red;
 
     --escuro: #1C1F2D;
-    --claro: white
+    --claro: white;
+
+    --bg-color: var(--claro);
+    --text-color: var(--black);
 }
 
 * {
@@ -14,7 +17,8 @@
 }
 
 body {
-    background-color: var(--escuro);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 button {
