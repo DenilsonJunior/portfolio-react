@@ -27,3 +27,7 @@ body {
 button {
     cursor: pointer;
 }
+
+h1 {
+    font-size: 2rem;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Quem } from './styles.js';
-import minhaImagem from '../../assets/img/eu.png'; // Certifique-se de usar o caminho correto a partir do local onde está o componente
+import minhaImagem from '../../assets/img/eu.png';
 
 const QuemSouEu = () => {
     return (
