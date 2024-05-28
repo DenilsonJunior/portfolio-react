@@ -19,17 +19,17 @@ export const Contatos = styled.div`
             gap: 1.5rem;
             margin: 2em 0 0;
             .card {
-                filter: drop-shadow(.3rem .5rem .5rem rgba(0, 0, 0, .3));
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 gap: 1rem;
                 text-decoration: none;
+                filter: drop-shadow(0rem 0.3rem 0.2rem rgba(0, 0, 0, .3));
                 .box {
-                    background-color: var(--claro);
-                    width: 3rem;
-                    height: 3rem;
+                    background-color: var(--color-07);
+                    width: 50px;
+                    height: 50px;
                     display: flex;
                     align-items: center;
                     justify-content: center;

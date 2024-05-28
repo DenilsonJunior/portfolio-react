@@ -1,16 +1,47 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Quem } from './styles.js';
 import minhaImagem from '../../assets/img/eu.png';
 
 const QuemSouEu = () => {
+    const meuNome = "Denilson...";
+    const intervaloRef = useRef(null); // Referência para armazenar o intervalo
+    const text = document.getElementById('text');
+
+    // text.fadeIn();
+    useEffect(() => {
+        
+        function inserirNome() {
+            const spanNome = document.getElementById('name');
+            spanNome.textContent = ""; // Limpa o conteúdo existente
+            let index = 0;
+            intervaloRef.current = setInterval(function() {
+                // Inserir uma letra do nome a cada 300 milissegundos
+                spanNome.textContent += meuNome[index];
+                index++;
+                // Se todas as letras foram inseridas, parar o intervalo
+                if (index === meuNome.length) {
+                    clearInterval(intervaloRef.current);
+                }
+            }, 250);
+        }
+
+        inserirNome();
+
+        // Limpeza na desmontagem do componente
+        return () => {
+            clearInterval(intervaloRef.current);
+            // quando finalizar a escrita:
+        };
+    }, []);
+
     return (
         <Quem>
             <div className='max-conteudo'>
                 <img src={minhaImagem} alt="Sua imagem" />
-                <div className='text'>
-                    <h1>Quem sou eu?</h1>
+                <div className='text' id='text'>
+                    <h1>Olá, sou <span id='name'></span></h1>
                     <p>
-                        Olá, sou Denilson, um desenvolvedor front-end apaixonado com cinco anos de experiência na criação de soluções de aprendizagem para empresas.
+                        ... um desenvolvedor front-end apaixonado com cinco anos de experiência na criação de soluções de aprendizagem para empresas.
                     </p>
                     <p>
                         Desde que mergulhei no mundo da programação, tenho dedicado minha energia ao aprimoramento das habilidades e à entrega de soluções de alta qualidade.

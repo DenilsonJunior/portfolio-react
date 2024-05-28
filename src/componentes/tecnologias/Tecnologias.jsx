@@ -7,6 +7,7 @@ function Tecnologias() {
                 <h1>Tecnologias que domino ou que pretendo estudar.</h1>
                 <div className='list'>
                     <div className='card'>
+                        <div className='box'></div>
                         <img src="src/assets/img/tecn1.png" alt="" />
                     </div>
                     <div className='card'>

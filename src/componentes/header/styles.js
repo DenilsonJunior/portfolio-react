@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
+    position: fixed;
     width: 100%;
-    background-color: #6200ea;
+    /* background-color: #6200ea; */
     display: flex;
     justify-content: flex-end;
     padding: 1em;
+    z-index: 2;
     button {
         border: none;
         background-color: transparent;
-        color: var(--white);
+        color: var(--text-color);
         width: 30px;
         height: 30px;
         display: flex;

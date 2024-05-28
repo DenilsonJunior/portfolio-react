@@ -3,13 +3,24 @@
 :root {
     --white: white;
     --black: black;
-    --color-01: red;
 
-    --escuro: #1C1F2D;
-    --claro: white;
+    --color-01: #0a2630;
+    --color-02: #213847;
+    --color-03: #5a455e;
+    --color-04: #92516e;
+    --color-05: #b3667c;
+    --color-06: #c0959c;
+    --color-07: #6c9089;
+    --color-08: #f3dac8;
 
-    --bg-color: var(--claro);
-    --text-color: var(--black);
+    --escuro: var(--color-01);
+    --claro: var(--color-08);
+
+    --bg1: var(--color-02);
+    --bg2: var(--color-07);
+
+    --capa1: url(src/assets/img/bg2.jpg);
+    --capa2: url(src/assets/img/bg1.jpg);
 }
 
 * {
