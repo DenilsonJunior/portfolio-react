@@ -8,7 +8,7 @@ const ListContatos = [
         text:"E-mail"
     },
     {
-        href:"http://",
+        href:"https://wa.me/5511987554210?text=Ol%C3%A1%2C+vim+pelo+seu+portif%C3%B3lio.",
         image:"cont02",
         text:"Whatsapp"
     },
