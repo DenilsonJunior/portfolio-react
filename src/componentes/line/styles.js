@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LineImage = styled.footer`
+export const LineImage = styled.div`
     width: 100%;
     height: 1rem;
     display: flex;

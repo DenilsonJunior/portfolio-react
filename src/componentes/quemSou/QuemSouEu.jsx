@@ -35,7 +35,7 @@ const QuemSouEu = () => {
     }, []);
 
     return (
-        <Quem>
+        <Quem id="quem">
             <div className='max-conteudo'>
                 <img src={minhaImagem} alt="Foto do Denilson Junior." />
                 <div className='text'>

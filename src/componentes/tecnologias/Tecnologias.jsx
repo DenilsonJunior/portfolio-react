@@ -62,7 +62,7 @@ const tecnListData = [
 
 function Tecnologias() {
     return (
-        <Tec>
+        <Tec id="tec">
             <div className='max-conteudo'>
                 <h1>Tecnologias que domino ou que pretendo estudar.</h1>
                 <div className='list'>

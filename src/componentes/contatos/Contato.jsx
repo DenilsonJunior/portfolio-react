@@ -26,7 +26,7 @@ const ListContatos = [
 
 function Contato() {
     return (
-        <Contatos>
+        <Contatos id="cont">
             <div className='max-conteudo'>
                 <h1>Contatos</h1>
                 <div className='list'>

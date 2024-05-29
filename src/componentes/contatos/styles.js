@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Contatos = styled.div`
+export const Contatos = styled.section`
     padding: 5rem 0;
     .max-conteudo {
         max-width: 1200px;

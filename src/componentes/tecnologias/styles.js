@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Tec = styled.div`
+export const Tec = styled.section`
     padding: 5rem 0;
     /* background-color: #0003; */
     background-color: var(--bg);
