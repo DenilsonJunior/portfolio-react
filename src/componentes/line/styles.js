@@ -6,6 +6,7 @@ export const LineImage = styled.footer`
     display: flex;
     justify-content: center;
     background-image: var(--bg-capa);
+    background-position: center;
     p {
         color: var(--text-color-reverse);
     }

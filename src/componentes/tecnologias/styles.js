@@ -24,26 +24,29 @@ export const Tec = styled.div`
             gap: 1rem;
             margin: 2em 0 0;
             .card {
-                /* filter: drop-shadow(.3rem .5rem .5rem rgba(0, 0, 0, .3)); */
-                background-color: var(--tec-card);
-                width: 100px;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 100%;
-                filter: drop-shadow(0rem 0.4rem 0.2rem rgba(0, 0, 0, .3));
-                position: relative;
-                @media (max-width: 768px) {
-                    width: 4.5rem;
-                    height: 4.5rem;
-                }
-                img {
-                    width: 60%;
-                    filter: drop-shadow(0.2rem 0.2rem 0.1rem rgba(0, 0, 0, .2));
-                    position: absolute;
-                }
+                
             }
         }
     }
 `;
+
+export const Tecnologia = styled.div`
+    background-color: var(--tec-card);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    filter: drop-shadow(0rem 0.4rem 0.2rem rgba(0, 0, 0, .3));
+    position: relative;
+    @media (max-width: 768px) {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    img {
+        width: 60%;
+        filter: drop-shadow(0.2rem 0.2rem 0.1rem rgba(0, 0, 0, .2));
+        position: absolute;
+    }
+`

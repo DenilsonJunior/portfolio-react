@@ -1,4 +1,64 @@
+import Tecnologia from './Item.jsx';
 import { Tec } from './styles.js';
+
+const tecnListData = [
+    {
+        image:"tecn1",
+        alt:"HTML5"
+    },
+    {
+        image:"tecn2",
+        alt:"CSS3"
+    },
+    {
+        image:"tecn3",
+        alt:"JavaScript"
+    },
+    {
+        image:"tecn4",
+        alt:"Git"
+    },
+    {
+        image:"tecn5",
+        alt:"Node js"
+    },
+    {
+        image:"tecn6",
+        alt:"Less"
+    },
+    {
+        image:"tecn7",
+        alt:"React"
+    },
+    {
+        image:"tecn8",
+        alt:"JQuery"
+    },
+    {
+        image:"tecn9",
+        alt:"Sass"
+    },
+    {
+        image:"tecn10",
+        alt:"Angular"
+    },
+    {
+        image:"tecn11",
+        alt:"Pug"
+    },
+    {
+        image:"tecn12",
+        alt:"Gulp"
+    },
+    {
+        image:"tecn13",
+        alt:"Notion"
+    },
+    {
+        image:"tecn14",
+        alt:"Tailwind"
+    }
+]
 
 function Tecnologias() {
     return (
@@ -6,49 +66,17 @@ function Tecnologias() {
             <div className='max-conteudo'>
                 <h1>Tecnologias que domino ou que pretendo estudar.</h1>
                 <div className='list'>
-                    <div className='card'>
-                        <div className='box'></div>
-                        <img src="src/assets/img/tecn1.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn2.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn3.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn4.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn5.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn6.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn7.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn8.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn9.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn10.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn11.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn12.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn13.png" alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src="src/assets/img/tecn14.png" alt="" />
-                    </div>
+                    {
+                        tecnListData.map(function(item, index) {
+                            return (
+                                <Tecnologia 
+                                    key={index} 
+                                    image={item.image}
+                                    alt={item.alt}
+                                />
+                            )
+                        })
+                    }
                 </div>
             </div>
         </Tec>

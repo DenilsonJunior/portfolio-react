@@ -10,11 +10,13 @@ function App() {
     return (
         <>
             <Header />
-            <QuemSouEu />
-            <Tecnologias />
-            <Line />
-            <Contato />
-            <Footer />
+            <main>
+                <QuemSouEu />
+                <Tecnologias />
+                <Line />
+                <Contato />
+                <Footer />
+            </main>
         </>
     );
 }

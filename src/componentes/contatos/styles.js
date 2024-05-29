@@ -18,7 +18,8 @@ export const Contatos = styled.div`
             flex-wrap: wrap;
             gap: 1.5rem;
             margin: 2em 0 0;
-            .card {
+
+            a {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -42,7 +43,6 @@ export const Contatos = styled.div`
                 p {
                     color: var(--text-color);
                 }
-                
             }
         }
     }

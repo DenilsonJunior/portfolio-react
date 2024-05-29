@@ -22,7 +22,7 @@ const QuemSouEu = () => {
                 if (index === meuNome.length) {
                     clearInterval(intervaloRef.current);
                 }
-            }, 250);
+            }, 300);
         }
 
         inserirNome();
@@ -37,8 +37,8 @@ const QuemSouEu = () => {
     return (
         <Quem>
             <div className='max-conteudo'>
-                <img src={minhaImagem} alt="Sua imagem" />
-                <div className='text' id='text'>
+                <img src={minhaImagem} alt="Foto do Denilson Junior." />
+                <div className='text'>
                     <h1>Olá, sou <span id='name'></span></h1>
                     <p>
                         ... um desenvolvedor front-end apaixonado com cinco anos de experiência na criação de soluções de aprendizagem para empresas.
