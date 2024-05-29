@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 const ModoEscuroButton = ({ modoEscuro, setModoEscuro }) => {
     useEffect(() => {
         document.documentElement.style.setProperty('--bg-capa', modoEscuro ? 'var(--capa1)' : 'var(--capa2)');
+        document.documentElement.style.setProperty('--bg-Menu', modoEscuro ? 'var(--bg-Menu1)' : 'var(--bg-Menu2)');
         document.documentElement.style.setProperty('--bg-color', modoEscuro ? 'var(--color-01)' : 'var(--color-08)');
         document.documentElement.style.setProperty('--text-color', modoEscuro ? 'var(--white)' : 'var(--black)');
         document.documentElement.style.setProperty('--text-color-reverse', modoEscuro ? 'var(--white)' : 'var(--claro)');

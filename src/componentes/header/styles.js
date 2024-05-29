@@ -20,6 +20,10 @@ export const HeaderContainer = styled.header`
         font-size: 25px;
         position: relative;
         z-index: 2;
+        transition-duration: .2s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     .boxMenu {
@@ -32,13 +36,17 @@ export const HeaderContainer = styled.header`
         z-index: 1;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0,0,0,.8);
+        background-color: var(--bg-Menu);
         top: 0;
         left: 0;
         backdrop-filter: blur(1rem);
         a {
             text-decoration: none;
-            color: var(--white);
+            color: var(--text-color);
+            transition-duration: .2s;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 `;

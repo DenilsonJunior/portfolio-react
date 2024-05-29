@@ -21,6 +21,9 @@
 
     --capa1: url(src/assets/img/bg2.jpg);
     --capa2: url(src/assets/img/bg1.jpg);
+
+    --bg-Menu1: rgba(0,0,0,.8);
+    --bg-Menu2: rgba(255,255,255,.3);
 }
 
 * {
