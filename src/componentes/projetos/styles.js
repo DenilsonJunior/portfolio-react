@@ -1,29 +1,43 @@
 import styled from 'styled-components';
 
 export const Projeto = styled.section`
-    padding: 5rem 0;
+    padding: 0rem 0 2rem;
     background-color: var(--bg);
     .max-conteudo {
-        max-width: 1200px;
+        max-width: 1360px;
         width: 100%;
         margin: 0 auto;
-        @media (max-width: 768px) {
-            width: 85%;
-        }
         h1 {
             color: var(--text-color-reverse);
+            text-align: center;
+            margin-bottom: 1rem;
         }
-    }
-
-    h1 {
-        text-align: center;
+        .swiper-horizontal {
+            padding: 0 2rem;
+            .swiper-wrapper {
+                /* justify-content: center; */
+            }
+        }
+        .swiper-button-prev, 
+        .swiper-button-next {
+            top: 0;
+            height: 100%;
+            &::after {
+                font-size: 2rem;
+            }
+        }
+        .swiper-button-prev {
+            left: 0;
+        }
+        .swiper-button-next {
+            right: 0;
+        }
     }
 
     a {
         text-decoration: none;
         position: relative;
-        width: 100%;
-        padding: 1rem;
+        padding: 1rem 1.5rem;
         .card {
             transition-duration: .2s;
             border-radius: 0.5rem;
@@ -31,11 +45,14 @@ export const Projeto = styled.section`
             .boxImage {
                 border-radius: .5rem;
                 width: 100%;
-                height: 200px;
+                height: 150px;
                 background-color: var(--color-01);
                 position: relative;
                 z-index: 1;
                 padding: 1rem;
+                @media (max-width: 768px) {
+                    height: 120px;
+                }
                 img {
                     width: 100%;
                     height: 100%;
@@ -44,17 +61,49 @@ export const Projeto = styled.section`
             }
             .boxText {
                 position: relative;
-                top: -5rem;
+                top: -150px;
                 width: 100%;
                 padding: .5rem;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                align-items: flex-start;
+                justify-content: space-between;
                 /* margin-bottom: 2rem; */
                 transition-duration: .2s;
                 border-radius: 0 0 .5rem .5rem;
-                p {
-                    color: white;
+                @media (max-width: 768px) {
+                    top: -120px;
+                }
+                .description {
+                    width: calc(100% - 25px);
+                    /* background-color: #0005; */
+                    h4 {
+                        color: white;
+                        @media (max-width: 768px) {
+                            font-size: 12px;
+                        }
+                    }
+                    p {
+                        color: white;
+                        font-size: 13px;
+                        @media (max-width: 768px) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+                button {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100%;
+                    background-color: transparent;
+                    border: solid 2px white;
+                    transition-duration: .3s;
+                    p {
+                        color: white;
+                        margin-left: 2px;
+                    }
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                 }
             }
     
