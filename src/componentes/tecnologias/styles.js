@@ -32,8 +32,8 @@ export const Tec = styled.section`
 
 export const Tecnologia = styled.div`
     background-color: var(--tec-card);
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
     display: flex;
     align-items: center;
     justify-content: center;

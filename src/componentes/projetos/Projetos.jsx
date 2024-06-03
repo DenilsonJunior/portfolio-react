@@ -13,10 +13,10 @@ import Item from './Item.jsx';
 function Projetos() {
     const projetoData = [
         {
-            image:"tecn1",
-            href:"teste",
-            title:"Title",
-            text:"Teste",
+            image:"proj1",
+            href:"https://pessoais-portifolio-scorm.vercel.app/",
+            title:"Portfolio SCORM",
+            text:"Componentes para criação de pacotes SCORM.",
         },
         {
             image:"tecn2",
