@@ -7,11 +7,11 @@ const ListContatos = [
         image:"cont01",
         text:"E-mail"
     },
-    {
-        href:"https://wa.me/5511987554210?text=Ol%C3%A1%2C+vim+pelo+seu+portif%C3%B3lio.",
-        image:"cont02",
-        text:"Whatsapp"
-    },
+    // {
+    //     href:"https://wa.me/5511987554210?text=Ol%C3%A1%2C+vim+pelo+seu+portif%C3%B3lio.",
+    //     image:"cont02",
+    //     text:"Whatsapp"
+    // },
     {
         href:"https://www.linkedin.com/in/denilson-junior-b80713115/",
         image:"cont03",

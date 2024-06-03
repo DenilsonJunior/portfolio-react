@@ -37,8 +37,8 @@ export const Contatos = styled.section`
                     border-radius: 100%;
                     transition-duration: .3s;
                     @media (max-width: 480px) {
-                        width: 40px;
-                        height: 40px;
+                        /* width: 40px;
+                        height: 40px; */
                     }
                     &:hover {
                         transform: scale(1.1);
@@ -51,7 +51,7 @@ export const Contatos = styled.section`
                 p {
                     color: var(--text-color);
                     @media (max-width: 480px) {
-                        font-size: .8rem;
+                        /* font-size: .8rem; */
                     }
                 }
             }
