@@ -35,9 +35,13 @@ export const Contatos = styled.section`
                     align-items: center;
                     justify-content: center;
                     border-radius: 100%;
+                    transition-duration: .3s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                     img {
                         width: 60%;
-                        filter: drop-shadow(0.2rem 0.2rem 0.1rem rgba(0, 0, 0, .2))
+                        filter: drop-shadow(0.2rem 0.2rem 0.1rem rgba(0, 0, 0, .2));
                     }
                 }
                 p {

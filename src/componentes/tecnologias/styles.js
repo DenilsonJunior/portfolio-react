@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Tec = styled.section`
     padding: 5rem 0;
     /* background-color: #0003; */
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     .max-conteudo {
         max-width: 1200px;
         width: 80%;

@@ -13,8 +13,10 @@ function App() {
             <Header />
             <main>
                 <QuemSouEu />
-                <Tecnologias />
-                <Projetos />
+                <section className='bg-sections'>
+                    <Tecnologias />
+                    <Projetos />
+                </section>
                 <Line />
                 <Contato />
                 <Footer />

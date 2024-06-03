@@ -44,6 +44,7 @@ export const HeaderContainer = styled.header`
             text-decoration: none;
             color: var(--text-color);
             transition-duration: .2s;
+            font-weight: 700;
             &:hover {
                 transform: scale(1.1);
             }

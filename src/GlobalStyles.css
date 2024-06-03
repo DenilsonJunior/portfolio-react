@@ -24,6 +24,9 @@
 
     --bg-Menu1: rgba(0,0,0,.8);
     --bg-Menu2: rgba(255,255,255,.3);
+
+    --bg-arrow-01: rgba(108,144,137,.5);
+    --bg-arrow-02: rgba(7,21,26,.6);
 }
 
 * {
@@ -31,6 +34,7 @@
     margin: 0;
     padding: 0;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -40,6 +44,10 @@ body {
     font-family: 'Montserrat';
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+.bg-sections {
+    background-color: var(--bg);
 }
 
 button {

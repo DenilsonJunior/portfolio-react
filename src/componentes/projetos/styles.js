@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Projeto = styled.section`
     padding: 0rem 0 2rem;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     .max-conteudo {
         max-width: 1360px;
         width: 100%;
@@ -13,7 +13,10 @@ export const Projeto = styled.section`
             margin-bottom: 1rem;
         }
         .swiper-horizontal {
-            padding: 0 2rem;
+            padding: 0 5rem;
+            @media (max-width: 768px) {
+                /* width: 3rem; */
+            }
             .swiper-wrapper {
                 /* justify-content: center; */
             }
@@ -22,8 +25,14 @@ export const Projeto = styled.section`
         .swiper-button-next {
             top: 0;
             height: 100%;
+            background-color: var(--bg-arrow);
+            width: 5rem;
+            @media (max-width: 768px) {
+                /* width: 3rem; */
+            }
             &::after {
                 font-size: 2rem;
+                color: var(--text-color-reverse);
             }
         }
         .swiper-button-prev {

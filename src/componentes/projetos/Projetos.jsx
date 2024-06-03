@@ -78,8 +78,8 @@ function Projetos() {
                     spaceBetween={0}
                     slidesPerView={slideView}
                     navigation
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
                 >
                     {projetoData.map((item, index) => (
                         <SwiperSlide key={index}>
