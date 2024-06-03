@@ -42,6 +42,9 @@ export const Quem = styled.section`
             @media (max-width: 768px) {
                 width: 60%;
             }
+            @media (max-width: 480px) {
+                width: 80%;
+            }
         }
 
         .text {

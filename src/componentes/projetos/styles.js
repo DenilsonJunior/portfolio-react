@@ -106,9 +106,15 @@ export const Projeto = styled.section`
                     background-color: transparent;
                     border: solid 2px white;
                     transition-duration: .3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     p {
                         color: white;
                         margin-left: 2px;
+                        @media (max-width: 480px) {
+                            font-size: .5rem;
+                        }
                     }
                     &:hover {
                         transform: scale(1.2);
