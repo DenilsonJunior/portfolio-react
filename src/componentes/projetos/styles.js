@@ -14,8 +14,8 @@ export const Projeto = styled.section`
         }
         .swiper-horizontal {
             padding: 0 5rem;
-            @media (max-width: 768px) {
-                /* width: 3rem; */
+            @media (max-width: 480px) {
+                padding: 0 3rem;
             }
             .swiper-wrapper {
                 /* justify-content: center; */
@@ -27,8 +27,8 @@ export const Projeto = styled.section`
             height: 100%;
             background-color: var(--bg-arrow);
             width: 5rem;
-            @media (max-width: 768px) {
-                /* width: 3rem; */
+            @media (max-width: 480px) {
+                width: 3rem;
             }
             &::after {
                 font-size: 2rem;
@@ -54,15 +54,16 @@ export const Projeto = styled.section`
             .boxImage {
                 border-radius: .5rem;
                 width: 100%;
-                height: 150px;
+                /* height: 160px; */
                 background-color: var(--color-01);
                 position: relative;
                 z-index: 1;
-                padding: 1rem;
-                @media (max-width: 768px) {
-                    height: 120px;
+                padding: .2rem;
+                @media (max-width: 480px) {
+                    /* height: 160px; */
                 }
                 img {
+                    border-radius: 0.4rem;
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
@@ -92,6 +93,7 @@ export const Projeto = styled.section`
                         }
                     }
                     p {
+                        margin: .2rem 0 0;
                         color: white;
                         font-size: 13px;
                         @media (max-width: 768px) {

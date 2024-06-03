@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import projetoData from './projetos.json';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -11,39 +13,6 @@ import 'swiper/css/scrollbar';
 import Item from './Item.jsx';
 
 function Projetos() {
-    const projetoData = [
-        {
-            image:"proj1",
-            href:"https://pessoais-portifolio-scorm.vercel.app/",
-            title:"Portfolio SCORM",
-            text:"Componentes para criação de pacotes SCORM.",
-        },
-        {
-            image:"tecn2",
-            href:"teste",
-            title:"Title",
-            text:"Teste",
-        },
-        {
-            image:"tecn3",
-            href:"teste",
-            title:"Title",
-            text:"Teste",
-        },
-        {
-            image:"tecn4",
-            href:"teste",
-            title:"Title",
-            text:"Teste",
-        },
-        {
-            image:"tecn5",
-            href:"teste",
-            title:"Title",
-            text:"Teste",
-        },
-    ]
-
     const [slideView, setSlideView] = useState(1)
 
     useEffect(() => {

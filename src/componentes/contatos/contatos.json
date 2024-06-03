@@ -1,0 +1,17 @@
+[
+    {
+        "href":"mailto:dehjr1990@gmail.com?subject=PORTIFÓLIO | CONTATO]&body=Olá, vim pelo seu portifólio.",
+        "image":"cont01",
+        "text":"E-mail"
+    },
+    {
+        "href":"https://www.linkedin.com/in/denilson-junior-b80713115/",
+        "image":"cont03",
+        "text":"Linkedin"
+    },
+    {
+        "href":"https://github.com/DenilsonJunior",
+        "image":"cont04",
+        "text":"GitHub"
+    }
+]
