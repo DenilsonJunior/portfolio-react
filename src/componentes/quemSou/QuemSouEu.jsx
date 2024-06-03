@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { Quem } from './styles.js';
-import minhaImagem from '../../assets/img/eu.png';
 
 const QuemSouEu = () => {
     const meuNome = "Denilson...";
@@ -37,7 +36,7 @@ const QuemSouEu = () => {
     return (
         <Quem id="quem">
             <div className='max-conteudo'>
-                <img src={minhaImagem} alt="Foto do Denilson Junior." />
+                <img src="/assets/img/eu.png" alt="Foto do Denilson Junior." />
                 <div className='text'>
                     <h1>Olá, sou <span id='name'></span></h1>
                     <p>

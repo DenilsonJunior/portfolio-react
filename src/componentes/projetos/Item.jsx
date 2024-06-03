@@ -3,7 +3,7 @@ function Item(props) {
         <a href={props.href} target="_blank" rel="noopener noreferrer">
             <div className='card'>
                 <div className='boxImage'>
-                    <img src={`src/assets/img/`+props.image+`.png`} alt="" />
+                    <img src={`/assets/img/`+props.image+`.png`} alt="" />
                 </div>
                 <div className='boxText'>
                     <div className='description'>
