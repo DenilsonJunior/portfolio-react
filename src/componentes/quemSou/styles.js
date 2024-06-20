@@ -4,6 +4,7 @@ export const Quem = styled.section`
     /* background-color: #0005; */
     position: relative;
     box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
 
     &::before {
         content: '';
@@ -30,7 +31,6 @@ export const Quem = styled.section`
         gap: 3rem;
         margin: 0 auto;
         padding: 5em 0;
-        overflow: hidden;
         @media (max-width: 768px) {
             width: 85%;
             flex-wrap: wrap;
