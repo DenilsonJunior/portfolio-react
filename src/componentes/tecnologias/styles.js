@@ -11,6 +11,8 @@ export const Tec = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
+        opacity: 0;
+        transform: scale(.1);
         @media (max-width: 768px) {
             width: 85%;
         }
