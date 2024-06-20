@@ -20,7 +20,7 @@ function Tecnologias() {
                 trigger: ".listTecnologias",
                 scrub: true,
                 start: "0px 550px", // Quando o topo do elemento atinge o centro da viewport
-                end: "80% 600px", // Quando o fundo do elemento atinge o centro da viewport
+                end: "90% 600px", // Quando o fundo do elemento atinge o centro da viewport
                 // markers: true // Adiciona marcadores para depuração
             }
         });
