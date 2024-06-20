@@ -4,7 +4,7 @@ export const LinkPadrao = styled.a`
     width: fit-content;
     margin: 0 auto;
     padding: .5rem 1.5rem;
-    border: solid var(--corButton) .25em;
+    border: solid var(--corButton) .2em;
     background-color: transparent;
     background-color: var(--bg-color);
     box-shadow: .3rem .3rem .5rem #0003;
@@ -25,7 +25,7 @@ export const BtnPadrao = styled.button`
     width: fit-content;
     margin: 0 auto;
     padding: .5rem 1.5rem;
-    border: solid var(--corButton) .25em;
+    border: solid var(--corButton) .2em;
     background-color: transparent;
     background-color: var(--bg-color);
     box-shadow: .3rem .3rem .5rem #0003;
