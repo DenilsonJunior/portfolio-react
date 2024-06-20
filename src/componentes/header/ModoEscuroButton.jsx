@@ -11,6 +11,7 @@ const ModoEscuroButton = ({ modoEscuro, setModoEscuro }) => {
         document.documentElement.style.setProperty('--bg', modoEscuro ? 'var(--bg1)' : 'var(--bg2)');
         document.documentElement.style.setProperty('--footer', modoEscuro ? 'var(--color-02)' : 'var(--color-07)');
         document.documentElement.style.setProperty('--bg-arrow', modoEscuro ? 'var(--bg-arrow-02)' : 'var(--bg-arrow-01)');
+        document.documentElement.style.setProperty('--corButton', modoEscuro ? 'var(--white)' : 'var(--escuro)');
     }, [modoEscuro]);
 
     return (
