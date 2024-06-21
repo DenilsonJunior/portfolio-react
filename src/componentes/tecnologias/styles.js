@@ -11,8 +11,6 @@ export const Tec = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
-        opacity: 0;
-        transform: scale(.1);
         @media (max-width: 768px) {
             width: 85%;
         }
@@ -20,6 +18,8 @@ export const Tec = styled.section`
             color: var(--text-color-reverse);
         }
         .list {
+            opacity: 0;
+            transform: scale(.1) translateY(100rem);
             display: flex;
             justify-content: center;
             flex-wrap: wrap;

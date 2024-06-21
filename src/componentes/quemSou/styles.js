@@ -57,22 +57,27 @@ export const Quem = styled.section`
                 width: 100%;
             }
             .text {
-                margin: 2rem 0 0;
+                margin: 1rem 0 0;
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
                 position: relative;
                 z-index: 1;
+                opacity: 0;
+                transform: translateY(10rem);
+                /* &.text1 {
+                } */
+            }
+            .button {
+                margin-top: 2rem;
+                transform: translateY(10rem);
+                opacity: 0;
             }
         }
 
     }
 
-    .hide {
-        opacity: 0 !important;
-    }
-
-    .animation1 {
+    /* .animation1 {
         transform: translateY(500px);
         opacity: 0;
     }
@@ -80,5 +85,5 @@ export const Quem = styled.section`
     .animation2 {
         transform: scale(.8);
         opacity: 0;
-    }
+    } */
 `;

@@ -5,35 +5,48 @@ import { Quem } from './styles.js';
 import Button from '../button/Button.jsx';
 
 const QuemSouEu = () => {
-    const minhaFotoRef = useRef(null);
     const intervaloRef = useRef(null);
     const textRef = useRef(null);
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to(minhaFotoRef.current, {
+        gsap.to('.minhaFoto', {
             x: 0,
             rotate: "0deg",
             opacity: 1,
             duration: "1",
         });
 
-        gsap.to(".animation1", {
+        gsap.to('.text', {
             y: 0,
             opacity: 1,
+            delay: 3,
             duration: "1",
-            delay: 4
-        })
+        });
 
-        gsap.to(".animation2", {
+        let startValue = "10% 5%";
+        let endValue = "40% 20%";
+
+        if (window.innerWidth <= 765) {
+            startValue = "45% 5%";
+            // endValue pode permanecer o mesmo ou você pode ajustá-lo também se necessário
+        }
+
+        gsap.to('.button', {
+            y: 0,
             opacity: 1,
-            scale: 1,
-            delay: 5
-        })
+            scrollTrigger: {
+                trigger: ".quem",
+                scrub: true,
+                start: startValue, // Quando o topo do elemento atinge o centro da viewport
+                end: endValue, // Quando o fundo do elemento atinge o centro da viewport
+                // markers: true // Adiciona marcadores para depuração
+            }
+        });
 
         return () => {
-            gsap.killTweensOf(minhaFotoRef.current);
+            
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
             gsap.killTweensOf('.txt1')
         };
@@ -72,7 +85,7 @@ const QuemSouEu = () => {
                         textRef.current.classList.remove('hide');
                     }
                 }
-            }, 100);
+            }, 75);
         }
 
         inserirNome();
@@ -84,12 +97,12 @@ const QuemSouEu = () => {
     }, []);
 
     return (
-        <Quem id="quem">
+        <Quem id="quem" className='quem'>
             <div className='max-conteudo'>
-                <img ref={minhaFotoRef} className='minhaFoto' src="/assets/img/eu.png" alt="Foto do Denilson Junior." />
+                <img className='minhaFoto' src="/assets/img/eu.png" alt="Foto do Denilson Junior." />
                 <div className='boxtext'>
                     <h1>O<span id='name'></span></h1>
-                    <div ref={textRef} className='text animation1 hide'>
+                    <div className='text'>
                         <p>
                             ... um desenvolvedor front-end apaixonado com cinco anos de experiência na criação de soluções de aprendizagem para empresas.
                         </p>
@@ -105,13 +118,13 @@ const QuemSouEu = () => {
                         <p>
                             Com um histórico sólido e um profundo interesse em desenvolvimento web, estou comprometido em impulsionar o sucesso dos projetos em que estou envolvido, contribuindo para o crescimento contínuo da equipe e da empresa.
                         </p>
-                        <Button
-                            class="animation2"
-                            nome="Download CV"
-                            href="/assets/cv0624.pdf"
-                            download="cv-Denilson.pdf"
-                        />
                     </div>
+                    <Button
+                        class="button"
+                        nome="Download CV"
+                        href="/assets/cv0624.pdf"
+                        download="cv-Denilson.pdf"
+                    />
                 </div>
             </div>
         </Quem>

@@ -5,12 +5,12 @@ export const LinkPadrao = styled.a`
     margin: 0 auto;
     padding: .5rem 1.5rem;
     border: solid var(--corButton) .2em;
-    background-color: transparent;
     background-color: var(--bg-color);
     box-shadow: .3rem .3rem .5rem #0003;
     border-radius: .8rem;
     transition-duration: .3s;
     text-decoration: none;
+    display: block;
     &:hover {
         transform: scale(.95);
     }
@@ -26,11 +26,11 @@ export const BtnPadrao = styled.button`
     margin: 0 auto;
     padding: .5rem 1.5rem;
     border: solid var(--corButton) .2em;
-    background-color: transparent;
     background-color: var(--bg-color);
     box-shadow: .3rem .3rem .5rem #0003;
     border-radius: .8rem;
     transition-duration: .3s;
+    display: block;
     &:hover {
         transform: scale(.95);
     }

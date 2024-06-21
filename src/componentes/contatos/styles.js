@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Contatos = styled.section`
     padding: 5rem 0;
+    overflow-y: hidden;
     .max-conteudo {
         max-width: 1200px;
         width: 80%;
@@ -27,6 +28,19 @@ export const Contatos = styled.section`
                 gap: 1rem;
                 text-decoration: none;
                 filter: drop-shadow(0rem 0.3rem 0.2rem rgba(0, 0, 0, .3));
+                &.anima1 {
+                    opacity: 0;
+                    transform: translateX(-35rem);
+                }
+                &.anima2 {
+                    opacity: 0;
+                    transform: translateY(15rem);
+                }
+                &.anima3 {
+                    opacity: 0;
+                    transform: translateX(35rem);
+                }
+
                 .box {
                     background-color: var(--color-07);
                     width: 50px;

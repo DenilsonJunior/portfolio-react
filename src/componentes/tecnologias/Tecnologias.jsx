@@ -7,14 +7,15 @@ import { Tec } from './styles.js';
 import tecnListData from './tecnologias.json';
 
 function Tecnologias() {
-    const listRef = useRef(null);
+    // const listRef = useRef(null);
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to(listRef.current, {
+        gsap.to('.list', {
             opacity: 1,
             scale: 1,
+            y: 0,
             // duration: 5,
             scrollTrigger: {
                 trigger: ".listTecnologias",
@@ -28,13 +29,13 @@ function Tecnologias() {
         return () => {
             // Limpeza do efeito quando o componente é desmontado
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-            gsap.killTweensOf(listRef.current);
+            // gsap.killTweensOf(listRef.current);
         }
     }, []);
 
     return (
         <Tec id="tec" className='listTecnologias'>
-            <div ref={listRef} className='max-conteudo'>
+            <div className='max-conteudo'>
                 <h1>Tecnologias que domino ou que pretendo estudar.</h1>
                 <div className='list'>
                     {tecnListData.map((item, index) => (
