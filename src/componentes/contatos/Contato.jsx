@@ -10,6 +10,14 @@ function Contato() {
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
+        let startValue = "10% 85%";
+        let endValue = "70% 90%";
+
+        if (window.innerWidth <= 765) {
+            // startValue = "45% 5%";
+            // endValue = "55% 20%";
+        }
+
         gsap.to(".anima1, .anima3", {
             x: 0,
             opacity: 1,
@@ -18,8 +26,8 @@ function Contato() {
             scrollTrigger: {
                 trigger: ".contatos",
                 scrub: true,
-                start: "0px 450px", // Quando o topo do elemento atinge o centro da viewport
-                end: "250px 580px", // Quando o fundo do elemento atinge o centro da viewport
+                start: startValue, // Quando o topo do elemento atinge o centro da viewport
+                end: endValue, // Quando o fundo do elemento atinge o centro da viewport
                 // markers: true // Adiciona marcadores para depuração
             }
         });
@@ -32,8 +40,8 @@ function Contato() {
             scrollTrigger: {
                 trigger: ".contatos",
                 scrub: true,
-                start: "0px 450px", // Quando o topo do elemento atinge o centro da viewport
-                end: "250px 580px", // Quando o fundo do elemento atinge o centro da viewport
+                start: startValue, // Quando o topo do elemento atinge o centro da viewport
+                end: endValue, // Quando o fundo do elemento atinge o centro da viewport
                 // markers: true // Adiciona marcadores para depuração
             }
         });

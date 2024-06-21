@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Contatos = styled.section`
     padding: 5rem 0;
-    overflow-y: hidden;
+    overflow: hidden;
     .max-conteudo {
         max-width: 1200px;
         width: 80%;
