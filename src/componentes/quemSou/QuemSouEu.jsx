@@ -29,8 +29,8 @@ const QuemSouEu = () => {
         let endValue = "40% 20%";
 
         if (window.innerWidth <= 765) {
-            startValue = "45% 5%";
-            endValue = "55% 20%";
+            startValue = "60% 5%";
+            endValue = "70% 20%";
         }
 
         gsap.to('.button', {

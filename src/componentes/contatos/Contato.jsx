@@ -15,7 +15,7 @@ function Contato() {
 
         if (window.innerWidth <= 765) {
             // startValue = "45% 5%";
-            // endValue = "55% 20%";
+            endValue = "60% 80%";
         }
 
         gsap.to(".anima1, .anima3", {
