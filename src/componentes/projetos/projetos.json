@@ -12,6 +12,12 @@
         "text":"Album de fotos e apresentação."
     },
     {
+        "image":"proj3",
+        "href":"https://pessoais-portifolio-scorm.vercel.app/",
+        "title":"Dafiti | Case",
+        "text":"OnePage simples"
+    },
+    {
         "image":"proj1",
         "href":"https://pessoais-portifolio-scorm.vercel.app/",
         "title":"Portfolio SCORM",
@@ -24,15 +30,9 @@
         "text":"Album de fotos e apresentação."
     },
     {
-        "image":"proj1",
+        "image":"proj3",
         "href":"https://pessoais-portifolio-scorm.vercel.app/",
-        "title":"Portfolio SCORM",
-        "text":"Componentes para criação de pacotes SCORM."
-    },
-    {
-        "image":"proj2",
-        "href":"https://fratellimovelaria.vercel.app/",
-        "title":"Fratelli Movelaria",
-        "text":"Album de fotos e apresentação."
+        "title":"Dafiti | Case",
+        "text":"OnePage simples"
     }
 ]
