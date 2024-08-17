@@ -1,7 +1,7 @@
 import { Projeto } from './styles.js';
 
 import { useState, useEffect } from 'react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import projetoData from './projetos.json';
@@ -43,10 +43,19 @@ function Projetos() {
             <div className='max-conteudo'>
                 <h1>Projetos</h1>
                 <Swiper
-                    modules={[Navigation, A11y]}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    // loop={true}
                     spaceBetween={0}
                     slidesPerView={slideView}
-                    navigation
+                    navigation={true}
+                    modules={[Navigation, A11y, Autoplay]}
+                    className="mySwiper"
                     // onSwiper={(swiper) => console.log(swiper)}
                     // onSlideChange={() => console.log('slide change')}
                 >
