@@ -24,27 +24,39 @@
         "text":"Webpage"
     },
     {
-        "image":"proj1",
-        "href":"https://pessoais-portifolio-scorm.vercel.app/",
-        "title":"Portfolio SCORM",
-        "text":"Componentes para criação de pacotes SCORM."
-    },
-    {
-        "image":"proj2",
-        "href":"https://fratellimovelaria.vercel.app/",
-        "title":"Fratelli Movelaria",
-        "text":"Album de fotos e apresentação."
-    },
-    {
-        "image":"proj3",
-        "href":"https://dafiti-case.vercel.app/",
-        "title":"Dafiti | Case",
+        "image":"proj5",
+        "href":"https://dft-moda-casual-esportiva.vercel.app/",
+        "title":"Dafiti | Moda casual esportiva",
         "text":"OnePage simples"
     },
     {
-        "image":"proj4",
-        "href":"https://amutay-web.vercel.app/",
-        "title":"Amutay",
-        "text":"Webpage"
+        "image":"proj6",
+        "href":"https://dft-nike-feminino.vercel.app/",
+        "title":"Dafiti | Nike feminino",
+        "text":"OnePage simples"
+    },
+    {
+        "image":"proj7",
+        "href":"https://dft-full.vercel.app/",
+        "title":"Dafiti | Dafiti Full",
+        "text":"OnePage serviço"
+    },
+    {
+        "image":"proj8",
+        "href":"https://dft-renata-vanzetto.vercel.app/",
+        "title":"Dafiti | Renata Vanzetto",
+        "text":"OnePage parceria"
+    },
+    {
+        "image":"proj9",
+        "href":"https://dft-loja-santa-lolla.vercel.app/",
+        "title":"Dafiti | Santa Lolla",
+        "text":"OnePage simples"
+    },
+    {
+        "image":"proj10",
+        "href":"https://dft-app.vercel.app/",
+        "title":"Dafiti | App",
+        "text":"OnePage simples"
     }
 ]
